@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik Broken Fax', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: url('https://img.freepik.com/free-photo/global-business-internet-network-connection-iot-internet-things-business-intelligence-concept-busines-global-network-futuristic-technology-background-ai-generative_1258-176762.jpg?w=1800&t=st=1703684690~exp=1703685290~hmac=f227e12a2c45274d7f64beccbe9c453105da16b888fe7b68c624d40c2239721c');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: rgb(255, 99, 42);
+}
+
+p {
+  width: 60%;
+  margin: auto;
+  color: aliceblue;
+}
+
+h1,
+h2,
+h3 {
+  color: aliceblue;
+}
+
+/* Navbar */
+
+#navbar {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  margin: 1.5rem;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  margin-left: auto;
+}
+
+.navbar .toggle_btn {
+  color: aliceblue;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: blue;
+  color: aliceblue;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: rgb(255, 99, 42);
+  transition: all 0.3s ease 0s;
+}
+
+.action_btn:active {
+  scale: 0.95;
+  transition: all 0.3s ease 0s;
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu li a {
+  transition: all 0.3s ease 0s;
+}
+
+/* Hero */
+
+#hero {
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin: 12px;
+}
+
+#hero h2 {
+  margin: 12px;
+}
+
+#hero .imgframe {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: solid aliceblue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  height: 225px;
+  width: 225px;
+}
+
+#hero img {
+  border-radius: 50%;
+  margin: 12px;
+  border: solid aliceblue;
+}
+
+.img-icon {
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.img-icon:hover {
+  scale: 1.05;
+  transition: all 0.3s ease 0s;
+}
+
+.img-icon:active {
+  scale: 0.95;
+  transition: all 0.3s ease 0s;
+}
+
+.transition {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  width: 250px;
+}
+
+.transition_btn {
+  background-color: rgb(255, 99, 42);
+  color: aliceblue;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.transition_btn:hover {
+  color: blue;
+  transition: all 0.3s ease 0s;
+}
+
+.transition:hover {
+  scale: 1.05;
+  transition: all 0.3s ease 0s;
+}
+
+.transition:active {
+  scale: 0.95;
+  transition: all 0.3s ease 0s;
+}
+
+/* About */
+#about-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 12%;
+}
+.about-left img {
+  width: 420px;
+  height: auto;
+  transform: translateY(50px);
+}
+.about-right {
+  width: 54%;
+}
+
+.about-right ul li {
+  display: flex;
+  align-items: center;
+}
+
+.about-right h1 {
+  color: #e74d06;
+  font-size: 37px;
+  margin-bottom: 5px;
+}
+
+.about-right p {
+  color: #444;
+  line-height: 26px;
+  font-size: 15px;
+}
+
+.about-right .address {
+  margin: 25px 0;
+}
+
+.about-right .address ul li {
+  margin-bottom: 5px;
+}
+
+.address .address-logo {
+  margin-right: 15px;
+  color: #e74d06;
+}
+
+.address .saprater {
+  margin: 0 35px;
+}
+
+.about-right .expertise ul {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.expertise h3 {
+  margin-bottom: 10px;
+}
+
+.expertise .expertise-logo {
+  font-size: 19px;
+  margin-right: 10px;
+  color: #e74d06;
+}
+
+/* Portfolio */
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .navbar .nav-links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
