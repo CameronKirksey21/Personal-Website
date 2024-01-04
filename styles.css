@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: black;
-  background-image: url('./assets/BlueOrange.jpg');
+  background-image: url('../assets/BlueOrange.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
