@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: black;
-  background-image: url('https://img.freepik.com/free-photo/global-business-internet-network-connection-iot-internet-things-business-intelligence-concept-busines-global-network-futuristic-technology-background-ai-generative_1258-176762.jpg?w=1800&t=st=1703684690~exp=1703685290~hmac=f227e12a2c45274d7f64beccbe9c453105da16b888fe7b68c624d40c2239721c');
+  background-image: url('https://img.freepik.com/free-vector/digital-technology-background-with-blue-orange-light-effect_1017-27423.jpg?w=2000&t=st=1704383160~exp=1704383760~hmac=b5bfea7a5c435e8e7a775e3734d7f7418082693079f6b6a1620dc69ed6770bd1');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -26,7 +26,8 @@ a {
 }
 
 a:hover {
-  color: rgb(255, 99, 42);
+  color: rgb(255, 68, 0);
+  transition: all 0.3s ease 0s;
 }
 
 p {
@@ -74,7 +75,6 @@ h3 {
 }
 
 .nav-links li a {
-  transition: all 0.3s ease 0s;
   margin-left: auto;
 }
 
@@ -86,7 +86,7 @@ h3 {
 }
 
 .action_btn {
-  background-color: blue;
+  background-color: #0470dc;
   color: aliceblue;
   padding: 0.5rem 1rem;
   border: none;
@@ -95,18 +95,15 @@ h3 {
   font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
 }
 
 .action_btn:hover {
   scale: 1.05;
-  color: rgb(255, 99, 42);
-  transition: all 0.3s ease 0s;
+  color: rgb(255, 68, 0);
 }
 
 .action_btn:active {
   scale: 0.95;
-  transition: all 0.3s ease 0s;
 }
 
 /* Dropdown Menu */
@@ -126,6 +123,7 @@ h3 {
 
 .dropdown_menu.open {
   height: 240px;
+  border: solid rgb(255, 68, 0);
 }
 
 .dropdown_menu .action_btn {
@@ -141,12 +139,7 @@ h3 {
   justify-content: center;
 }
 
-.dropdown_menu li a {
-  transition: all 0.3s ease 0s;
-}
-
 /* Hero */
-
 #hero {
   height: calc(100vh - 40px);
   display: flex;
@@ -167,7 +160,7 @@ h3 {
 }
 
 #hero .imgframe {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgb(255, 68, 0), #0470dc 100%);
   border-radius: 50%;
   border: solid aliceblue;
   display: block;
@@ -208,7 +201,7 @@ h3 {
 }
 
 .transition_btn {
-  background-color: rgb(255, 99, 42);
+  background-color: rgb(255, 68, 0);
   color: aliceblue;
   padding: 0.5rem 1rem;
   border: none;
@@ -217,12 +210,10 @@ h3 {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
 }
 
 .transition_btn:hover {
-  color: blue;
-  transition: all 0.3s ease 0s;
+  color: #0470dc;
 }
 
 .transition:hover {
@@ -236,75 +227,261 @@ h3 {
 }
 
 /* About */
-#about-section {
+#about {
+  overflow: hidden;
+}
+
+#about .heading h1 {
+  color: rgb(255, 68, 0);
+  font-size: 50px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+#about .container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 65px auto;
+}
+
+.about-content {
+  flex: 1;
+  width: 600px;
+  margin: 0px 25px;
+  background: linear-gradient(135deg, rgb(255, 68, 0), #0470dc 100%);
+  border: solid rgb(255, 68, 0);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.about-content h3 {
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  width: auto;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+}
+
+.about-image {
+  flex: 1;
+  width: 600px;
+  margin: auto;
+}
+
+#about img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  border: solid rgb(255, 68, 0);
+}
+
+.about-content .transition {
+  flex-grow: 1;
+  margin-top: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px 12%;
+  justify-content: center;
 }
-.about-left img {
-  width: 420px;
-  height: auto;
-  transform: translateY(50px);
-}
-.about-right {
-  width: 54%;
+/* Portfolio */
+
+#portfolio {
+  overflow: hidden;
 }
 
-.about-right ul li {
+#portfolio .heading h1 {
+  color: rgb(255, 68, 0);
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#portfolio .container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 90%;
+  margin: 30px auto;
 }
 
-.about-right h1 {
-  color: #e74d06;
-  font-size: 37px;
-  margin-bottom: 5px;
+/* Skills */
+
+.skills-content {
+  width: 100%;
+  margin: 10px 25px;
+  background: linear-gradient(135deg, rgb(255, 68, 0), #0470dc 100%);
+  border: solid rgb(255, 68, 0);
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.about-right p {
-  color: #444;
-  line-height: 26px;
-  font-size: 15px;
+.skills-content h3 {
+  margin: 20px;
+  text-align: center;
 }
 
-.about-right .address {
-  margin: 25px 0;
-}
-
-.about-right .address ul li {
-  margin-bottom: 5px;
-}
-
-.address .address-logo {
-  margin-right: 15px;
-  color: #e74d06;
-}
-
-.address .saprater {
-  margin: 0 35px;
-}
-
-.about-right .expertise ul {
-  width: 80%;
+.skills-frame {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 10px 0px;
 }
 
-.expertise h3 {
+.skills-frame div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-frame img {
+  background-color: aliceblue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border: solid rgb(255, 68, 0);
+  border-radius: 10px;
+  margin: 12px 35px;
+}
+
+.skills-frame h4 {
+  font-size: 14px;
+  color: aliceblue;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
   margin-bottom: 10px;
 }
 
-.expertise .expertise-logo {
-  font-size: 19px;
-  margin-right: 10px;
-  color: #e74d06;
+/* Projects */
+
+.col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
 }
 
-/* Portfolio */
+.card {
+  background: linear-gradient(135deg, rgb(255, 68, 0), #0470dc 100%);
+  border: solid rgb(255, 68, 0);
+  border-radius: 10px;
+}
+
+.card img {
+  border-radius: 10px;
+  height: 200px;
+  width: 100%;
+}
+
+.card h4 {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 68, 0);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.card-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  margin-top: auto;
+  width: auto;
+}
+
+.transition {
+  align-items: center;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+
+#contact {
+  overflow: hidden;
+}
+
+#contact .heading h1 {
+  color: rgb(255, 68, 0);
+  font-size: 50px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+#contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 65px auto;
+}
+
+.contact-content {
+  width: auto;
+  margin: 0px 25px;
+  background: linear-gradient(135deg, rgb(255, 68, 0), #0470dc 100%);
+  border: solid rgb(255, 68, 0);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contact-content a {
+  display: flex;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.contact-content p {
+  padding: 0px;
+  margin-left: 0px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.contact-content p:hover {
+  color: rgb(255, 68, 0);
+}
+
+.contact-content p:active {
+  scale: 0.95;
+}
+
+#contact img {
+  border-radius: 50%;
+  margin: 12px;
+  border: solid aliceblue;
+}
+
+.img-icon {
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.img-icon:hover {
+  scale: 1.05;
+  transition: all 0.3s ease 0s;
+}
+
+.img-icon:active {
+  scale: 0.95;
+  transition: all 0.3s ease 0s;
+}
 
 /* Responsive Design */
 @media (max-width: 992px) {
@@ -322,9 +499,75 @@ h3 {
   }
 }
 
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+
+  #about {
+    margin: 0px;
+  }
+
+  #about .container {
+    width: 100%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 0px;
+    padding: 0px 40px;
+  }
+
+  .about-content {
+    width: 100%;
+    margin: 35px 0px;
+  }
+
+  .about-content h3 {
+    font-size: 30px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .about-content .transition {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .about-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 576px) {
   .dropdown_menu {
     left: 2rem;
     width: unset;
+  }
+
+  .skills-frame {
+    flex-wrap: wrap;
+  }
+
+  .col {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-content a {
+    flex-direction: column;
+    align-items: center;
   }
 }
